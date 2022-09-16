@@ -1,6 +1,6 @@
 const Articleslist = ({articles}) => {
     return ( 
-        <div>
+        <div className="addarticle"> 
 
             {
                 articles && articles.map((article)=>{

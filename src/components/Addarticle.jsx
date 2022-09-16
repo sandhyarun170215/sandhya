@@ -23,14 +23,16 @@ const Addarticles = () => {
     }
 
     return ( 
-    <div>
+    <div className="add-task">
 
         <form onSubmit={handlePublish}>
             <input type="text" placeholder="title" 
             value={title} onChange={(e)=>{settitle(e.target.value)}} />
+            <br />
 
             <textarea  cols="30" rows="10"
             value={body} onChange={(e)=>{setbody(e.target.value)}} ></textarea>
+            <br />
 
             <input type="submit" value="publish" />
         </form>

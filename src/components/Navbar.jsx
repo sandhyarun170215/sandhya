@@ -8,7 +8,7 @@ const Navbar= () => {
     return ( 
 
         <nav>
-            <div>
+            <div className="search">
                 <Link to={`search${searchVal}`}>
                 <button> &#128269; </button>
                 </Link>
@@ -19,12 +19,14 @@ const Navbar= () => {
                 
                 <button onClick={()=>{setsearchVal("")}}> clear </button>
             </div>
-            <div>
+            <hr />
+            <div className="search1">
                 <Link to="/add">New Post</Link>
                 <Link to="/">Published</Link>
+                
             </div>
         </nav>
     );
 }
 
-export default Navbar
+export default Navbar;

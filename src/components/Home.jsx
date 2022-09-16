@@ -24,8 +24,8 @@ const Home = () => {
 
     return ( 
         <div>
-            <h1> List of all Articles </h1>
-            <hr />
+            <h1 className="Home"> List of all Articles </h1>
+            
 
             <Articleslist articles={articles}/>
 
